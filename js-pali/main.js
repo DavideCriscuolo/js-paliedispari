@@ -8,17 +8,17 @@
 let userWord = prompt("Inserisci una parola");
 
 function verifyPali(word) {
-  let reverseword = "";
+  let reverseWord = "";
   for (let i = word.length - 1; i >= 0; i--) {
     const wordChar = word[i];
 
-    reverseword = reverseword + wordChar;
+    reverseWord = reverseWord + wordChar;
   }
-  if (reverseword === word) {
+  if (reverseWord === word) {
     console.log(`La parola ${word} che hai scelto è palindroma`);
   } else {
     console.log(`La parola ${word} che hai scelto non è palindroma`);
   }
-  return reverseword;
+  return reverseWord;
 }
 verifyPali(userWord);
