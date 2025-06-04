@@ -12,10 +12,14 @@ function getRndInteger(min, max) {
 
 const pcNumber = getRndInteger(1, 5);
 
+let pari = null;
+
 if (choiseUserNumb % 2 === 0 && choiseUser === "pari") {
-  console.log(`Hai scelto il numero pari ${choiseUserNumb}`);
+  pari = true;
+  console.log(`Hai scelto il numero pari ${choiseUserNumb}`, pari);
 } else {
-  console.log(`Hai scelto il numero dispari ${choiseUserNumb}`);
+  pari = false;
+  console.log(`Hai scelto il numero dispari ${choiseUserNumb}`, pari);
 }
 
 function winner(num1, num2) {
