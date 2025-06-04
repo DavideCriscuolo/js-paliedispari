@@ -12,17 +12,17 @@ function getRndInteger(min, max) {
 
 const pcNumber = getRndInteger(1, 5);
 
+if (choiseUserNumb % 2 === 0 && choiseUser === "pari") {
+  console.log(`Hai scelto il numero pari ${choiseUserNumb}`);
+} else {
+  console.log(`Hai scelto il numero dispari ${choiseUserNumb}`);
+}
+
 function winner(num1, num2) {
   somma = num1 + num2;
-  if (choiseUserNumb % 2 === 0 && choiseUser === "pari") {
-    console.log(`Hai scelto il numero pari ${choiseUserNumb}`);
-  } else {
-    console.log(`Hai scelto il numero dispari ${choiseUserNumb}`);
-  }
-
-  if (somma % 2 === 0 && choiseUserNumb % 2 === 0) {
+  if (somma % 2 === 0 && num1 % 2 === 0) {
     console.log(`La somma dei due numeri è ${somma}. Hai vinto!`);
-  } else if (somma % 2 !== 0 && choiseUserNumb % 2 !== 0) {
+  } else if (somma % 2 !== 0 && num1 % 2 !== 0) {
     console.log(`La somma dei due numeri è ${somma}. Hai vinto!`);
   } else {
     console.log(`La somma dei due numeri è ${somma}. Ha vinto il pc!`);
