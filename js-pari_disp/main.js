@@ -3,7 +3,7 @@
  Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione). 
  Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) Dichiariamo chi ha vinto.*/
 
-let choiseUser = prompt("Sccegli pari o dispari");
+let choiseUser = prompt("Sccegli pari o dispari").toLowerCase();
 let choiseUserNumb = Number(prompt("Scegli un numero da 1 a 5"));
 
 function getRndInteger(min, max) {
